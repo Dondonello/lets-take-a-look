@@ -1,0 +1,61 @@
+
+/* 
+unfortunately if I actually scroll down 
+(have to much on screen orzoom in a lot)
+the gif will have border, weird stuff not sure
+if it can get fixed
+*/
+body {
+  background-image: url(https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUybW15bm5qc2RvZmhsMWR5YTByNTlkZzJpNWZhbWJvZ2RhN2p5MXp1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3vRbNFMuFt5Zm372/giphy.gif);
+  background-size: cover;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+h1 {
+  color: black;
+}
+p {
+  color: black;
+  font-size: 18px;
+}
+.button {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.container {
+  background-color: chartreuse;
+}
+
+.write {
+  background-color: chocolate;
+}
+
+input[type="radio"] + label{
+  color:salmon;
+  background-color: brown;
+}
+.radio{
+  color: slateblue;
+}
+
+.frog {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 1.25s 999;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left:0px; top: 0px;}
+  25%  {background: yellow; left: 0%; top: 200px;}
+  50%  {background: blue; left: 0px; top: 0px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
