@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="diestyle.css">
+    </head>
+    <body class="diebg">
+
+        <button id="start" class="button" 
+        onclick="play()"></button>
+        <p></p>
+
+        <img id="who" class="none" src="Gbprintercreepy.webp">
+        <audio id="scary" autoplay>
+            <source src="kill-bill-whistle.mp3">
+        </audio>
+
+        <script>
+            var scary= document.getElementById("scary");
+            var but=document.getElementById("start");
+            var who=document.getElementById("who");
+
+            function play(){
+                who.className = 'who';
+                but.remove();
+                return scary.play();
+            }
+        </script>
+    </body>
+</html>
